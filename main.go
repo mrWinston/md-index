@@ -15,14 +15,15 @@ const (
 
 {{ range .MarkdownFiles -}}
 - [{{ . }}](./{{ . }})
-{{ end -}}
-
+{{ end }}
 ## Subfolders
 
 {{ range .SubDirs -}}
 - [{{ . }}](./{{ . }}/index.md)
 {{ end -}}
 
+
+- [UP](../index.md)
 `
 )
 
